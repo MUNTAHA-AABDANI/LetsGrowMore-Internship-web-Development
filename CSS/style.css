@@ -1,0 +1,552 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    font-size: 20px;
+
+}
+nav {
+    display: flex;
+    /* background-color: rgb(255, 187, 187); */
+    background-color: rgb(255, 255, 255);
+    justify-content:flex-start;
+    /* align-items: center; */
+    overflow: hidden;
+    width: 100%;
+    /* margin-left: 20px; */
+    position: fixed;
+    z-index: 9999;
+    color: rgb(44, 45, 46);
+    /* z-index: -1; */
+   
+
+}
+nav div {
+    /* margin-left: 10%; */
+    /* position: fixed; */
+    overflow:hidden;
+}
+
+nav ul li{
+      list-style: none;
+      text-decoration: none;
+      display: inline;
+      /* position: fixed; */
+}
+nav li a{
+    list-style: none;
+    text-decoration: none;
+    display: inline;
+    /* position: fixed; */
+    color: rgb(44, 45, 46);
+}
+nav a:hover{
+   color:  rgb(228, 23, 101);
+   /* text-decoration: underline; */
+}
+.nav-bar li a:active{
+    color:  rgb(56, 16, 31);
+    text-decoration: underline;
+}
+.nav-bar li{
+    margin-left: 15px;
+}
+.icon{
+    left: 60%;
+}
+.icon li{
+    margin-left: 20px;
+    
+    /* margin-left: 15px; */
+    /* align-items:flex-start; */
+    /* left: 30px; */
+    
+}
+.cover{
+    height: 95vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background-color:antiquewhite;
+    
+}
+.content h2 {
+    /* top: 50%; */
+    font-size: 100px;
+    font-family: 'Tangerine', cursive;
+   
+    margin-left: 150px;
+    position: relative;
+    color: rgb(228, 23, 101);
+
+}
+
+#main-head {
+    /* margin-top: 1px; */
+    margin-left: 150px;
+    position: relative;
+    letter-spacing: 5px;
+    font-weight: 2em;
+    color: rgb(46, 27, 2);
+    font-size: 30px;
+}
+#text {
+    margin-left: 150px;
+    letter-spacing: 3px;
+    font-size: 90%;
+    color: rgb(202, 158, 129);
+    
+}
+.image img{
+    background-size: 100% 100%;
+    /* width: 100%; */
+    margin-left :100px;
+}
+button{
+    margin-left: 150px;
+    background-color:  rgb(228, 23, 101);
+    color: aliceblue;
+    padding: 10px 30px;
+    border: none;
+    font-size: 14px;
+    box-shadow: 1px 1px 3px gray;
+    /* box-shadow:1px 1px 2px rgb(235, 95, 172); */
+    
+}
+button:hover{
+    background-color: rgb(245, 91, 91);
+}
+.elements  {
+    height: 95vh;
+    width: 800px;
+    background-color:antiquewhite;
+    align-items: center;
+    margin-left: 300px;
+    border: 5px solid rgb(236, 204, 162);
+    box-shadow: 1px 1px 2px;
+}
+.elements h2{
+    font-size: 50px;
+    font-family: 'Tangerine', cursive;
+
+    margin-left: 250px;
+    position: relative;
+    color: rgb(228, 23, 101);
+}
+.elements pre{
+   
+    margin-left: 40px;
+    size: 10px;
+    position: relative;
+    color: rgb(168, 144, 128);
+}
+.elements button{
+   
+    margin-left: 360px;
+    position: relative;
+    border-radius: 100%;
+    padding: 10px 12px;
+    box-shadow: 1px 1px 3px gray;
+
+}
+.elements img {
+    margin-left: 120px;
+    position: relative;
+}
+input {
+    display: none;
+}
+.Gallery{
+    width: 100%;
+    text-align: center;
+}
+h1{
+    font-family: 'Tangerine', cursive;
+    font-weight: normal;
+    font-size: 3em;
+    color: rgb(12, 11, 11);
+    margin: 40px 0;
+}
+h1::before{
+    content: '';
+    position: absolute;
+    width: 10%;
+    height: 3px;
+    background-color:rgb(228, 23, 101); 
+    bottom: -680px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: animate 4s linear infinite;
+}
+@keyframes  animate {
+    0%{
+        width: 50px;
+    }
+    50%{
+        width: 100px;
+    }
+    100%{
+        width: 150px;
+    }
+}
+.top-container{
+    background-color: antiquewhite;
+    width: 90%;
+    margin: 0 auto 20px auto ;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px rgb(230, 195, 149);
+
+}
+h3{
+    height: 100%;
+    background-color: rgb(255, 187, 187);
+    line-height: 60px;
+    padding: 0 50px;
+    color: rgb(216, 14, 71);
+}
+label{
+    display: inline-block;
+    height: 100%;
+    margin: 0 15px;
+    line-height: 60px;
+    font-size: 18px;
+    color: rgb(228, 23, 101);
+    cursor: pointer;
+    transition: color .5s;
+
+}
+label:hover{
+    color: black;
+}
+.photos_gallery{
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px ;
+}
+.pic {
+    position: relative;
+    height: 250px;
+    border-radius: 10px;
+    box-shadow: 3px 2px 3px gray;
+    cursor: pointer;
+}
+.pic img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.pic::before{
+    content: "CAKES GALLERY";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(255, 255, 255);
+    font-size: 22px;
+    font-weight: bold;
+    width: 100%;
+    margin-top: -100px;
+    opacity: 0;
+    transition: .3s;
+    transition-delay: .2s;
+    z-index: 1px;
+
+}
+.pic:after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    /* opacity: 2; */
+    height: 0;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0,.4);
+    transition: .3s;
+}
+.pic:hover::after{
+    height: 100%;
+}
+.pic:hover::before{
+    margin-top: 0;
+    opacity: 1;
+}
+#check1:checked ~ .Gallery .photos_gallery .pic{
+    opacity: 1;
+    transform:scale(1);
+    position: relative;
+    transition: .5s;
+}
+
+#check2:checked ~ .Gallery .photos_gallery .Wedding_cakes{
+    opacity: 1;
+   transform: scale(1);
+    position: relative;
+    transition: .5s;
+}
+
+#check3:checked ~ .Gallery .photos_gallery .Birthday_cakes{
+    opacity: 1;
+    transform:scale(1);
+    position: relative;
+    transition: .5s;
+}
+
+#check4:checked ~ .Gallery .photos_gallery .Party_Cakes{
+    opacity: 1;
+    transform:scale(1);
+    position: relative;
+    transition: .5s;
+}
+/* #line{
+    border: 2px solid black;
+   width: 2px;
+} */
+
+.block {
+    background-color: rgb(255, 255, 255);
+    height: 95vh;
+    width: 90%;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+   
+}
+#Blocks{
+    /* padding: auto; */
+    /* margin: 20px; */
+}
+#Blocks h1::before{
+    content: '';
+    position: absolute;
+    width: 15%;
+    height: 3px;
+    background-color:rgb(228, 23, 101); 
+    bottom: -3080px;
+    left: 48%;
+    transform: translateX(-50%);
+    animation: animate 4s linear infinite;
+}
+.block .post-slider{
+    display: inline-flex;
+}
+.block .post-slider i{
+    color: rgb(253, 182, 177);
+    font-size: 2em;
+    box-shadow: 1px gray;
+    margin-top: 155px;
+
+}
+.block .post-slider .post{
+   
+    height: 300px;
+  
+    width: 300px;
+    color: rgb(226, 138, 138);
+    margin: 30px;
+    border-radius: 15px;
+    background-color: antiquewhite;
+    box-shadow: 3px 2px 3px gray;
+    border: 2px 2px 2px solid rgba(238, 183, 183, 0.8);
+    padding: 20px;
+   
+
+}
+.pages{
+    /* height: 90vh; */
+    width: 90%;
+    text-align: center;
+     
+}
+.pages h3{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1em;
+}
+.pages p{
+    margin-left: 70px;
+}
+.pages b {
+    font-size: 2em;
+}
+#pages h1::before{
+    /* content: '';
+    position: absolute; */
+    width: 15%;
+    height: 3px;
+    background-color:rgb(228, 23, 101); 
+    bottom: -3690px;
+    left: 44%;
+    transform: translateX(-50%);
+    animation: animate 4s linear infinite;
+}
+
+.contact-in{
+    width: 95%;
+    height:auto;
+    margin: 10px;
+    display: inline-flex;
+    justify-content: flex-start;
+    /* flex-wrap: wrap; */
+    padding: 10px;
+    border-radius: 10px;
+    /* background-color: rgb(253, 183, 183); */
+    box-shadow: 0px 0px 10px 0px #666;
+}
+.contact-map{
+    /* width: 100%; */
+    height: auto;
+    flex: 50%;
+    background-color: antiquewhite;
+}
+.contact-form{
+    /* width: 100%; */
+    height: auto;
+    margin: 140px;
+    flex: 50%;
+    background-color:rgb(255, 255, 255);
+    /* text-align: center; */
+}
+.contact-form-txt{
+   width: 60%;
+   height: 20px;
+   color: #000;
+   box-shadow: 3px 2px 3px gray;
+   border: 1px solid #bcbcbc;
+   border-radius: 50px;
+   outline: none;
+   margin-bottom: 20px;
+   padding: 15px;
+}
+.contact-form-txtArea{
+    width: 60%;
+    height: 130px;
+    color: #000;
+    box-shadow: 0px 1px 1px  0px gray;
+    border: 1px solid #bcbcbc;
+    border-radius: 50px;
+    outline: none;
+    margin-bottom: 20px;
+    padding: 15px;
+ }
+ .contact-form-btn{
+    width: 60%;
+    height: 20px;
+    color: rgb(255, 255, 255);
+    box-shadow: 0px 1px 1px  0px gray;
+     text-align: center;
+     font-weight: bold;
+    border: 1px solid #bcbcbc;
+    border-radius: 50px;
+    outline: none;
+    font-size: .8888em;
+    margin-left: 20px;
+    padding: 15px;
+    background-color: rgb(56, 224, 14);
+ }
+footer{
+    background-color:antiquewhite;
+    /* background-color: rgb(255, 187, 187); */
+    
+}
+footer h2{
+    margin-left: 350px;
+    font-size: 40px;
+    font-family: 'Tangerine', cursive;
+}
+
+footer pre{
+    /* align-items: center; */
+    margin-left: 250px;
+  
+   
+}
+
+footer pre a{
+    text-decoration: none;
+    color: rgb(160, 151, 151);
+
+}
+/* div{
+    padding: 10px 10px;
+    background-color:rgb(243, 210, 166);
+} */
+
+
+#footer {
+    font-family: 'Tangerine', cursive;
+    margin-left: 600px;
+    font-size: 1.8em;
+    height: 10vh;
+}
+/* .gallery {
+    display: flex;
+    width: 100%;
+  
+
+}
+The grid: Four equal columns that floats next to each other
+.column {
+    float: left;
+    width: 25%;
+    padding: 20px 20px;
+    margin-left: 20px;
+  }
+  
+  Style the images inside the grid
+  .column img {
+    opacity: 0.8;
+    cursor: pointer;
+    width: 450px;
+    height: 400px;
+    background-size: 100% 100%;
+    padding: 20px 10px;
+    border: 3px solid pink;
+  }
+  
+  .column img:hover {
+    opacity: 1;
+  }
+  
+  Clear floats after the columns
+  .row {
+      padding: 12px;
+      margin: 10px;
+
+  }
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  The expanding image container (positioning is needed to position the close button and the text)
+  .container {
+    position: relative;
+    display: none;
+  }
+  
+  Expanding image text
+  #imgtext {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: white;
+    font-size: 20px;
+  }
+  
+  
+  Closable button inside the image
+  .closebtn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+  } */
